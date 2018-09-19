@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container ">
+        <div class='card-panel top col s12'>
+            <div class="row">
+                <h2 class="survey center-align">Survey Questions</h2>
+                <div class="divider"></div>
+            </div>
+            <div class='card-panel grey lighten-2'>
+                <div class="row">
+                    <h3 class="about center-align">About You</h3>
+                </div>
+                <div class="row">
+                    <h5 class="left-align">Name (Required)</h5>
+                    <div class="input-field col s12">
+                        <input id="name" type="text" class="validate" required>
+                        <label for="name text-black">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="left-align">Link to Photo Image (Required)</h5>
+                    <div class="input-field col s12">
+                        <input id="photo" type="text" class="validate" required>
+                        <label for="photo">Image</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5 class="number">Question 1</h5>
+                    <h6 class="question orange-text text-darken-2">You love dogs more than cats.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q1">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 2</h5>
+                    <h6 class="question orange-text text-darken-2">You love cats more than dogs.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q2">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 3</h5>
+                    <h6 class="question orange-text text-darken-2">Cereal goes first, then milk.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q3">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 4</h5>
+                    <h6 class="question orange-text text-darken-2">You rarely do something just out of sheer curiosity.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q4">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 5</h5>
+                    <h6 class="question orange-text text-darken-2">In a discussion, truth should be more important than
+                        people’s sensitivities.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q5">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 6</h5>
+                    <h6 class="question orange-text text-darken-2">You love martial arts.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q6">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 7</h5>
+                    <h6 class="question orange-text text-darken-2">Books are amazing, I love to read.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q7">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 8</h5>
+                    <h6 class="question orange-text text-darken-2">On a sunny day, I have to go outside!</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q8">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 9</h5>
+                    <h6 class="question orange-text text-darken-2">You love trying new things.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q9">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="number">Question 10</h5>
+                    <h6 class="question orange-text text-darken-2">You enjoy hiking more than clubs and bars.</h6>
+                    <div class="input-field col m4 s12 ">
+                        <select class="browser-default" id="q10">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger z-depth-5 col l6 offset-l3 s12 submit">Submit</button>
+                </div>
+            </div>
+            <div class="row">
+                <a class="white-text link" href="/api/friends">Friends API</a>
+            </div>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content"></div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Done</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./logic.js" type="text/javascript"></script>
+
+</body>
+
+</html>
