@@ -12,8 +12,9 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(express.static(path.join(__dirname, 'app/public')));
 
-require('./app/routing/htmlRoutes.js')(app);
 require('./app/routing/apiRoutes.js')(app);
+require('./app/routing/htmlRoutes.js')(app);
+
 
 // Starts our server, and lets us see in temrinal what port are we at.
 app.listen(PORT, function() {

@@ -39,9 +39,11 @@ $(function () {
             // grab the URL of the website.
             var currentURL = window.location.origin;
 
+
+
             $.post(currentURL + '/api/friends', newUser, function (data) {
                 if (data) {
-                    console.log("this is the data: " + data);
+                    console.log("this is the data: " + JSON.stringify(data));
                     $('.modal-content').empty();
                     $('#name').val('');
                     $('#photo').val('');
@@ -50,19 +52,21 @@ $(function () {
                     });
 
 
-                    data.forEach(function(element) {
-                        // console.log(element)
+
+
+
+                 
                         let $div = $(`<div class="friends">`);
                         let $div2 = $(`<div class="friendImages">`);
-                        let name = element.name;
-                        let url = element.photo;
+                        let name = data.name;
+                        let url = data.photo;
                         let header = $(`<h4>`).text(name);
                         let photo = $(`<img class="circle" width="250px">`).attr('src', url);
                         $div.append(header);
                         $div2.append(photo);
                         // console.log($div, $div2, 'IS IT WORKING');
                         $('.modal-content').append($div2, $div);
-                    });
+                  
 
                     var $title = $('<h3 class="title">');
                     if (data.length > 1) {

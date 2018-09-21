@@ -1,7 +1,7 @@
 var friends = [
     {
         "name":"Ahmed",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://baconipsum.com/wp-content/uploads/2015/01/bacon-ipsum-square-200-200.jpg",
         "scores":[
             5,
             1,
